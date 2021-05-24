@@ -1,0 +1,18 @@
+%%% Структура выпускной квалификационной работы
+\input{src/title_pdf.tex}                                                   % Титульный лист pdf
+\input{src/task_pdf.tex}                                                    % Задание лист pdf
+\input{src/abstract.tex}                                                    % Реферат
+\newpage
+\input{src/contents.tex}                                                    % Содержание (Оглавление)
+\ifnumequal{\value{contnumfig}}{1}{}{\counterwithout{figure}{chapter}}
+\ifnumequal{\value{contnumtab}}{1}{}{\counterwithout{table}{chapter}}
+\input{src/dictionary.tex}                                                  % Перечень условных обозначений, символов, сокращений, единиц и терминов
+\input{src/introduction.tex}                                                % Введение
+\ifnumequal{\value{contnumfig}}{1}{\counterwithout{figure}{chapter}
+}{\counterwithin{figure}{chapter}}
+\ifnumequal{\value{contnumtab}}{1}{\counterwithout{table}{chapter}
+}{\counterwithin{table}{chapter}}
+\input{src/chapter_1/chapter_1.tex}                                         % Глава 1
+\input{src/chapter_2/chapter_2.tex}                                         % Глава 2
+\input{src/conclusion.tex}                                                  % Заключение
+\input{src/references.tex}                                                  % Библиографический список

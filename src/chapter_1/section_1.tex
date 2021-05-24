@@ -1,0 +1,64 @@
+\section{Форматирование текста}\label{sec:chapter_1/section_1}
+
+Мы можем сделать \textbf{жирный текст} и \textit{курсив}.
+
+\section{Ссылки}\label{sec:chapter_1/section_2}
+
+Сошлёмся на библиографию.
+Одна ссылка: \cite{kuznetsov}.
+Две ссылки: \cite{kuznetsov, creating_a_ros_package}.
+Ещё ссылка: \cite{gost_9294_93}.
+
+\section{Формулы}\label{sec:chapter_1/section_3}
+
+Благодаря пакету \textit{icomma}, \LaTeX одинаково хорошо воспринимает в качестве десятичного разделителя и запятую (\(3,1415\)), и точку (\(3.1415\)).
+
+\subsection{Ненумерованные одиночные формулы}\label{subsec:chapter_1/section_3/subsection_1}
+
+Вот так может выглядеть формула, которую необходимо вставить в строку по тексту: \(x \approx \sin x\) при \(x \to 0\).
+
+\subsection{Другая формула}\label{subsec:chapter_1/section_3/subsection_2}
+
+Другой формулы не будет. Я не знаю математику в \LaTeX.
+
+\subsection{Ещё формула}\label{subsec:chapter_1/section_3/subsection_3}
+
+Ещё формулы не будет. Я не знаю математику в \LaTeX.
+
+\section{Цитата}\label{sec:chapter_1/section_4}
+
+Цитата: <<Lorem ipsum dolor sit amet>>.
+
+\section{Перечисления}\label{sec:chapter_1/section_5}
+
+Я добавил два новых стиля перечислений: diplomaenumerate и diplomaitemize.
+
+\subsection{Числовое перечисление}\label{subsec:chapter_1/section_5/subsection_1}
+
+Числовое перечисление:
+\begin{diplomaenumerate}
+    \item Первый пункт.
+    \item Второй пункт.
+    \item Третий пункт.
+    \item Четвёртый пункт.
+\end{diplomaenumerate}
+
+\subsection{Перечисление пунктами}\label{subsec:chapter_1/section_5/subsection_2}
+
+Перечисление пунктами:
+\begin{diplomaitemize}
+    \item первый пункт;
+    \item второй пункт;
+    \item третий пункт;
+    \item четвёртый пункт.
+\end{diplomaitemize}
+
+\section{Тире и дефисы}\label{sec:chapter_1/section_6}
+
+Стандартное \LaTeX тире --- это было тире.
+
+Ещё есть короткое тире -- это было короткое тире.
+
+Но нормоконтроль требует минус как тире - минус как тире.
+
+\textbf{Тут подходит только последний вариант. Через такое - тире.}

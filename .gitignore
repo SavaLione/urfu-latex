@@ -1,0 +1,25 @@
+# cache and other
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nlo
+*.out
+#*.pdf
+*.xml
+*.gz
+*.toc
+*.synctex
+*.synctex(busy)
+
+# pdf
+diploma.pdf
+seminar.pdf
+Список изменений.pdf
+
+# presentation
+*.nav
+*.snm
